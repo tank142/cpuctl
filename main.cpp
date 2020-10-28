@@ -65,7 +65,7 @@ void core(int n, bool o,int t){ //Меняет состояние ядра
 }
 void corectl(int *cpu,int *max,int *min,int *up,int *down){ //Меняет состояние ядер в зависимости от нагрузки на процессор
     int cores = corescan();
-    int n = 2;
+    int n = 1;
     for (;n < cores;n++){core(n,true,0);}chrono::milliseconds(1000);
     for (;;){
         this_thread::sleep_for(chrono::milliseconds(*INTERVAL));
