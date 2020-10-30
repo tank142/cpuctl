@@ -1,0 +1,9 @@
+[Unit]
+Description=cpuctl
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/cpuctl
+
+[Install]
+WantedBy = multi-user.target
